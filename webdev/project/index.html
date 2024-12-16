@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">Portfolio</div>
+            <div class="nav-links">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="animate-text">Hi, I'm <span class="highlight">Akshat Srivastava</span></h1>
+            <p class="animate-text-delay">Software Developer | Competitive Programmer</p>
+          
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>I'm a passionate software developer with expertise in full-stack development and competitive programming.</p>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <h3>CodeForces</h3>
+                        <p>Rating: <span id="cf-rating">1600</span></p>
+                        <p>Max Rating: <span id="cf-max-rating">1700</span></p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>CodeChef</h3>
+                        <p>Rating: <span id="cc-rating">1800</span></p>
+                        <p>Max Rating: <span id="cc-max-rating">1900</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <div class="project-grid" id="project-grid">
+            <!-- Projects will be dynamically loaded here -->
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>Languages</h3>
+                <div class="skill-items">
+                    <span class="skill-item">C++</span>
+                    <span class="skill-item">Python</span>
+                    <span class="skill-item">JavaScript</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Web Technologies</h3>
+                <div class="skill-items">
+                    <span class="skill-item">React</span>
+                    <span class="skill-item">HTML5</span>
+                    <span class="skill-item">CSS3</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Tools</h3>
+                <div class="skill-items">
+                    <span class="skill-item">Git</span>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-content">
+            <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" required placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" required placeholder="Your Email">
+                </div>
+                <div class="form-group">
+                    <textarea id="message" required placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2024 Your Name. All rights reserved.</p>
+    </footer>
+</body>
+</html>
